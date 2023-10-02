@@ -1,3 +1,5 @@
+package passoffTests;
+
 import chess.*;
 
 /**
