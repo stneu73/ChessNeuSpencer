@@ -11,9 +11,8 @@ public class StandardRules implements ChessRules {
         return null;
     }
 
-    @Override
-    public ChessMove getPieceMoves(ChessPiece pieceType) {
-        return null;
+    public ChessMove[] getValidMoves(ChessPiece.PieceType pieceType, ChessBoard currBoard, ChessPosition currPos) {
+        return new ChessMove[0];
     }
 
     @Override

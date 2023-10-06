@@ -6,7 +6,8 @@ package chess;
 public interface ChessRules {
     int getBoardSize();
     ChessBoard getInitialBoardState();
-    ChessMove getPieceMoves(ChessPiece pieceType);
+    ChessMove[] getValidMoves(ChessPiece.PieceType pieceType, ChessBoard currBoard, ChessPosition currPos);
+
     boolean getCheck(ChessBoard currBoard);
     boolean getCheckMate(ChessBoard currBoard);
     ChessPiece getPromotion();

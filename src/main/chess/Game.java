@@ -3,6 +3,15 @@ package chess;
 import java.util.Collection;
 
 public class Game implements ChessGame {
+    ChessRules rules;
+    public Game() {
+        ChessRules rules = new StandardRules();
+    }
+
+    public ChessRules getRules() {
+        return rules;
+    }
+
     @Override
     public TeamColor getTeamTurn() {
         return null;

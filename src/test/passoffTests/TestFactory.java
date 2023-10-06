@@ -20,7 +20,7 @@ public class TestFactory {
 
     public static ChessPiece getNewPiece(ChessGame.TeamColor pieceColor, ChessPiece.PieceType type){
 
-        return null;
+        return new Piece(pieceColor, type);
     }
 
     public static ChessPosition getNewPosition(Integer row, Integer col) {
