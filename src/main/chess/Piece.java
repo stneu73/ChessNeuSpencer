@@ -5,10 +5,12 @@ import java.util.Collection;
 public class Piece implements ChessPiece {
     ChessGame.TeamColor color;
     PieceType type;
+    ChessRules rules;
 
-    public Piece(ChessGame.TeamColor theColor,PieceType thePiece) {
-        color = theColor;
-        type = thePiece;
+    public Piece(ChessGame.TeamColor color,PieceType type) {
+        this.color = color;
+        this.type = type;
+        this.rules = rules;
     }
     @Override
     public ChessGame.TeamColor getTeamColor() {
@@ -22,8 +24,7 @@ public class Piece implements ChessPiece {
 
     @Override
     public Collection<ChessMove> pieceMoves(ChessBoard board, ChessPosition myPosition) {
-        Move[] validMoveSet = Game.getRules().getValidMoves(type, board, myPosition);
-
-        return null;
+//        ChessMove[] validMoveSet =
+        return rules.getValidMoves(type, board, myPosition);
     }
 }

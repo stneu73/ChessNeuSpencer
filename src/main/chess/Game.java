@@ -6,6 +6,7 @@ public class Game implements ChessGame {
     ChessRules rules;
     public Game() {
         ChessRules rules = new StandardRules();
+        // create board, give it the rules
     }
 
     public ChessRules getRules() {

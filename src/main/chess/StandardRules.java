@@ -1,5 +1,7 @@
 package chess;
 
+import java.util.Collection;
+
 public class StandardRules implements ChessRules {
     @Override
     public int getBoardSize() {
@@ -7,12 +9,12 @@ public class StandardRules implements ChessRules {
     }
 
     @Override
-    public ChessBoard getInitialBoardState() {
+    public ChessPiece[][] getInitialBoardState() {
         return null;
     }
 
-    public ChessMove[] getValidMoves(ChessPiece.PieceType pieceType, ChessBoard currBoard, ChessPosition currPos) {
-        return new ChessMove[0];
+    public Collection<ChessMove> getValidMoves(ChessPiece.PieceType pieceType, ChessBoard currBoard, ChessPosition currPos) {
+        return null;
     }
 
     @Override
